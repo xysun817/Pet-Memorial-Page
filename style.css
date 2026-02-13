@@ -1,0 +1,107 @@
+/* 全局重置与基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", "Microsoft YaHei", sans-serif; /* 兼容中英文，字体柔和 */
+}
+
+body {
+  background-color: #fff9f5; /* 暖米色背景，温柔不刺眼 */
+  color: #5a4b3f; /* 浅棕色文字，替代纯黑更温馨 */
+  line-height: 1.6; /* 行高舒适，阅读不费力 */
+  padding: 20px;
+  max-width: 1000px; /* 限制页面宽度，避免拉伸 */
+  margin: 0 auto; /* 页面居中 */
+}
+
+/* 标题样式 */
+h1 {
+  color: #8b6e55; /* 深一点的暖棕，突出主标题 */
+  font-size: 2.2rem;
+  margin: 30px 0;
+  letter-spacing: 1px; /* 字间距稍大，更柔和 */
+}
+
+h3 {
+  color: #7d634d;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.gallery-heading {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+/* 图片画廊样式 */
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 响应式网格，适配不同屏幕 */
+  gap: 20px; /* 图片间距，不拥挤 */
+  margin-bottom: 50px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 250px; /* 统一图片高度，排版整齐 */
+  object-fit: cover; /* 图片裁剪，不拉伸 */
+  border-radius: 12px; /* 圆角，柔和不尖锐 */
+  box-shadow: 0 3px 8px rgba(140, 118, 95, 0.15); /* 轻微阴影，增加层次感 */
+  transition: transform 0.3s ease; /* hover微动效，温馨不夸张 */
+}
+
+.photo-card img:hover {
+  transform: scale(1.02); /* 轻微放大，互动感 */
+}
+
+/* 纪念文字区域 */
+.memorial-words {
+  background-color: #ffffff; /* 白色背景突出文字 */
+  padding: 25px;
+  border-radius: 12px;
+  margin: 30px 0;
+  box-shadow: 0 2px 6px rgba(140, 118, 95, 0.1);
+}
+
+.memorial-words p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.memorial-words strong {
+  color: #c47451; /* 温柔的暖红，突出重点 */
+}
+
+/* 珍贵回忆列表 */
+.sweet-memories {
+  margin: 40px 0;
+  padding-left: 20px;
+}
+
+.sweet-memories ul {
+  list-style: none; /* 隐藏默认列表符号 */
+}
+
+.sweet-memories li {
+  font-size: 1.05rem;
+  margin: 12px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+/* 自定义列表符号（小爱心），贴合温馨氛围 */
+.sweet-memories li::before {
+  content: "❤️";
+  position: absolute;
+  left: 0;
+  transform: scale(0.8); /* 缩小爱心，更精致 */
+}
+
+footer {
+  margin: 50px 0 30px;
+  color: #8b6e55;
+  font-size: 1.1rem;
+  padding-top: 20px;
+  border-top: 1px solid #e8d9cc; 
+}
